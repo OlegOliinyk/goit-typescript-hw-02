@@ -1,0 +1,20 @@
+.imageCardDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.imageCardImgWidth {
+  width: 100%;
+  object-fit: cover;
+  /* object-position: center; */
+}
+
+.imageCardImgHeight {
+  height: 100%;
+  object-fit: cover;
+  /* object-position: center; */
+}

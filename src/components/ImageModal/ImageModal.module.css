@@ -1,0 +1,56 @@
+.imageModal {
+  border: 1px solid #353535;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 4vw auto 0 auto;
+  background-color: #353535;
+  overflow: hidden;
+}
+
+.imageModal p {
+  color: #ffffff;
+}
+
+.imageModalDivImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.imageModalDiv {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #ffffff;
+}
+
+.imageModalOl {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  width: 80%;
+}
+
+.imageModalButton {
+  border: 1px solid #808080;
+  font-family: "Montserrat-Medium", sans-serif;
+  width: auto;
+  height: 2em;
+}
+
+.imageModalButton:hover {
+  border-color: #000000;
+}
+
+.imageModalImgWidth {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.imageModalImgHeight {
+  max-height: 100%;
+  object-fit: cover;
+}

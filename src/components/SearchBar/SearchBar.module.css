@@ -1,0 +1,35 @@
+.searchHeader {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 100;
+  background-color: #4e75ff;
+}
+
+.searchForm {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+}
+
+.searchInput {
+  border: 1px solid #808080;
+  width: 250px;
+  padding: 0.2em 0.4em;
+}
+
+.searchButton {
+  border: 1px solid #808080;
+  font-family: 'Montserrat-Medium', sans-serif;
+  width: auto;
+}
+
+.searchInput:hover,
+.searchButton:hover {
+  border-color: #000000;
+}
