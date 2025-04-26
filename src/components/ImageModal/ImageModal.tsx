@@ -1,9 +1,30 @@
+import React from "react";
 import Modal from "react-modal";
 import styles from "./ImageModal.module.css";
 import { FaCamera, FaHeart } from "react-icons/fa";
 import { MdDescription } from "react-icons/md";
 
-const ImageModal = ({ isOpen, onClose, image }) => {
+interface Image {
+  id: string | number;
+  urls: {
+    regular: string;
+  };
+  alt_description: string | null;
+  width: number;
+  height: number;
+  likes: number;
+  user: {
+    name: string;
+  };
+}
+
+interface Props {
+  isOpen: boolean;
+  onClose: () => void;
+  image: Image | null;
+}
+
+const ImageModal: React.FC<Props> = ({ isOpen, onClose, image }) => {
   if (!image) return null;
   console.log(image);
 
@@ -17,7 +38,7 @@ const ImageModal = ({ isOpen, onClose, image }) => {
       <div className={styles.imageModalDivImg}>
         <img
           src={image.urls.regular}
-          alt={image.alt_description}
+          alt={image.alt_description || "Зображення"}
           className={
             image.width < image.height
               ? styles.imageModalImgWidth
